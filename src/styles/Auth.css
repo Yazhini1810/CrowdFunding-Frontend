@@ -1,0 +1,26 @@
+.auth{
+width:350px;
+margin:60px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.auth input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.auth button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:6px;
+}

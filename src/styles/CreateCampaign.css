@@ -1,0 +1,158 @@
+.campaign-page{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:40px;
+  background:#e9eff5;
+  padding:40px 20px; /* 🔥 reduce */
+  max-width:1200px;
+  margin:auto;
+}
+
+/* LEFT */
+
+.campaign-info{
+flex:1;
+max-width:650px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.campaign-info h1{
+font-size:42px;
+margin:0;
+font-weight:700;
+}
+
+.campaign-info p{
+font-size:17px;
+color:#555;
+margin-bottom:12px;
+line-height:1.6;
+}
+
+/* INFO BOX */
+
+.info-box{
+display:flex;
+align-items:flex-start;
+gap:16px;
+background:white;
+padding:22px;
+border-radius:12px;
+box-shadow:0 3px 14px rgba(0,0,0,0.08);
+transition:0.25s;
+}
+
+.info-box:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.info-icon{
+font-size:30px;
+color:#2f9e84;
+margin-top:4px;
+}
+
+.info-box h3{
+margin:0;
+margin-bottom:6px;
+font-size:18px;
+}
+
+.info-box p{
+margin:0;
+color:#555;
+font-size:14px;
+line-height:1.5;
+}
+
+/* RIGHT FORM */
+
+.campaign-card{
+width:520px;
+background:white;
+padding:35px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:16px;
+margin-top:-40px;
+
+flex: 0 0 600px;   /* 🔥 force width */
+  max-width: 400px;
+
+}
+
+@media (max-width:768px){
+
+  .campaign-page{
+    flex-direction:column;  /* stack */
+    padding:20px;
+  }
+
+  .campaign-card{
+    flex: unset;        /* 🔥 remove 600px only in mobile */
+    width:100%;
+    max-width:100%;
+  }
+
+}
+
+.campaign-card h2{
+text-align:left;
+margin-bottom:10px;
+font-size:28px;
+}
+
+/* INPUT FIX */
+
+.campaign-card input,
+.campaign-card select,
+.campaign-card textarea{
+padding:13px;
+border:1px solid #ccc;
+border-radius:7px;
+font-size:14px;
+width:100%;
+box-sizing:border-box;
+transition:0.2s;
+}
+
+.campaign-card input:focus,
+.campaign-card select:focus,
+.campaign-card textarea:focus{
+outline:none;
+border-color:#2f9e84;
+box-shadow:0 0 0 2px rgba(47,158,132,0.15);
+}
+
+.campaign-card textarea{
+height:100px;
+resize:none;
+}
+
+.campaign-card button{
+background:#2f9e84;
+color:white;
+border:none;
+padding:13px;
+border-radius:7px;
+font-size:15px;
+cursor:pointer;
+transition:0.2s;
+font-weight:500;
+}
+
+.campaign-card button:hover{
+background:#248a72;
+}
+
+.campaign-card label{
+font-size:14px;
+margin-top:4px;
+color:#444;
+}

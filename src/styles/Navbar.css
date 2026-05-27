@@ -1,0 +1,325 @@
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 70px;
+background: #2aa889;
+color:white;
+
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+/* BUTTON AREA */
+
+.nav-links{
+display:flex;
+gap:15px;
+}
+
+
+.login-btn{
+background:transparent;
+color:white;
+padding:10px 20px;
+border:2px solid white;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+.register-btn{
+background:white;
+color:#0f172a;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* MODAL BACKGROUND */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.4);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:999;
+}
+
+/* BOX */
+
+.modal-box{
+background:white;
+width:350px;
+padding:30px;
+border-radius:12px;
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-box h2{
+margin-bottom:15px;
+}
+
+/* INPUT */
+
+.modal-box input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+/* BUTTON */
+
+.submit-btn{
+background:rgb(47, 219, 204);
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:6px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.close-btn{
+margin-top:10px;
+background:#eee;
+border:none;
+padding:8px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+}
+.campaign-btn{
+background:none;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+position:relative;
+}
+
+.campaign-btn::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-2px;
+width:0%;
+height:2px;
+background:white;
+transition:0.3s;
+}
+
+.campaign-btn:hover::after{
+width:100%;
+}
+
+.campaign-btn:hover{
+background:rgb(47, 219, 204);
+}
+.campaign-btn{
+background: transparent;
+border: none;
+outline: none;
+box-shadow: none;
+
+color: white;
+font-size:16px;
+cursor:pointer;
+
+position: relative;
+padding:5px 0;
+}
+.campaign-btn:hover{
+background: transparent;   /* important */
+}
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.modal-box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:350px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.modal-box input,
+.modal-box textarea,
+.modal-box select{
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.submit-btn{
+background:#3498db;
+color:white;
+border:none;
+padding:8px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.close-btn{
+background:red;
+color:white;
+border:none;
+padding:8px;
+border-radius:5px;
+cursor:pointer;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-y: auto;   /* important */
+}
+
+.modal-box{
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+
+  max-height: 90vh;   /* screen height control */
+  overflow-y: auto;   /* scroll inside modal */
+}
+.modal-box textarea{
+  width: 100%;
+  height: 120px;      /* description box height */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;       /* optional */
+  font-size: 14px;
+}
+.modal{
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.4);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* CARD */
+
+.auth-card{
+background:white;
+width:350px;
+border-radius:10px;
+overflow:hidden;
+position:relative;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+
+.auth-header{
+background:#2ea98b;
+color:white;
+text-align:center;
+font-size:22px;
+padding:15px;
+font-weight:600;
+}
+
+/* BODY */
+
+.auth-body{
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.auth-body input{
+padding:10px;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+/* BUTTON */
+
+.auth-btn{
+background:#2ea98b;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* TEXT LINKS */
+
+.switch-text{
+text-align:center;
+font-size:14px;
+}
+
+.switch-text span{
+color:#2ea98b;
+cursor:pointer;
+font-weight:600;
+}
+
+/* FORGOT */
+
+.forgot{
+font-size:13px;
+color:#2ea98b;
+cursor:pointer;
+}
+
+/* CLOSE ICON */
+
+.close-icon{
+position:absolute;
+top:10px;
+right:15px;
+font-size:18px;
+cursor:pointer;
+}
